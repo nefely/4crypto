@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>project big scale 1</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="pluggins/slick-slider/slick.js"></script>
+	<link rel="stylesheet" href="pluggins/slick-slider/slick.css">
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="pluggins/slick-menu/jquery.slicknav.js"></script>
+	<link rel="stylesheet" href="pluggins/slick-menu/slicknav.css">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+
+<div class="popup" data-popup="popup-1">
+<div class="popup-inner search">
+<input type="text" class="input" placeholder="Search...">
+<button class="ion-ios-search-strong"></button>
+<a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+</div>
+</div>
+
+
+<header>
+		<div class="top_header">
+			<img src="img/ad2@2x.jpg" alt="header">
+		</div>
+		<nav>
+			<div class="wrapper nav">
+				<div class="logo">
+				<a href="index.html">
+					<img src="img/logo-white@2x.png" alt="4crypto">
+				</a>
+				</div>
+				<ul class="menu">
+					<li> 
+						<a href="index.html">home</a>
+						<ul class="submenu">
+						<li><a href="index.html">main page</a></li>
+						<li><a href="index.html">second page</a></li>
+						</ul>
+					</li>
+					<li>
+					<a href="news.html">news</a>
+					<ul class="submenu">
+						<li><a href="news.html">hot news</a></li>
+						<li><a href="news.html">latest news</a></li>
+					</ul>
+					</li>
+					<li><a href="guides.html">guides</a></li>
+					<li ><a href="cryptocurrency.html">cryptocurrency</a></li>
+					<li class="page_active"><a href="icos.html">ico list</a></li>
+					<li ><a href="Q&A.html">q&a</a></li>
+					<li class="search"><a class="btn1 ion-ios-search-strong ionicons" data-popup-open="popup-1" href="#" ></a></li>
+					<li class="registration">
+					<a href="#" class="ion-person-add ionicons"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="crypto_values multiple-items first_crypto_val_block">
+					<div class="value_block collapse">
+						<div class="text_coin">
+							<h4>BitCoin</h4><span class="hours">(24h)</span>
+							<p class="cpi">$8,485.39</p>
+							<p class="cost">EUR: €6,512.65</p>
+							<p class="cost">GBP: €6,023.23</p>
+							<p class="module pos">0.03%</p>
+						</div>
+					</div>
+					<div class="value_block">
+						<div class="text_coin">
+						<h4>ETH</h4><span class="hours">(24h)</span>
+						<p class="cpi">$8,485.39</p>
+						<p class="cost">EUR: €6,512.65</p>
+						<p class="cost">GBP: €6,023.23</p>
+						<p class="module neg">0.03%</p>
+						</div>
+					</div>
+					<div class="value_block">
+						<div class="text_coin">
+						<h4>DASH</h4><span class="hours">(24h)</span>
+						<p class="cpi">$8,485.39</p>
+						<p class="cost">EUR: €6,512.65</p>
+						<p class="cost">GBP: €6,023.23</p>
+						<p class="module pos">0.03%</p>
+						</div>
+					</div>
+					<div class="value_block">
+						<div class="text_coin">
+						<h4>XPR</h4><span class="hours">(24h)</span>
+						<p class="cpi">$8,485.39</p>
+						<p class="cost">EUR: €6,512.65</p>
+						<p class="cost">GBP: €6,023.23</p>
+						<p class="module neg">0.03%</p>
+						</div>
+					</div>
+					<div class="value_block">
+						<div class="text_coin">
+						<h4>LiteCoin</h4><span class="hours">(24h)</span>
+						<p class="cpi">$8,485.39</p>
+						<p class="cost">EUR: €6,512.65</p>
+						<p class="cost">GBP: €6,023.23</p>
+						<p class="module pos">0.03%</p>
+						</div>
+					</div> 
+				</div> <!-- crypto values -->
+		</nav>
+</header>
+
+<div class="container_news guidesandquestion">
+	<div class="wrapper">
+		<div class="container_news_left icos_page">
+			<div class="container_news_left_header container_news_left_header_icos_page">
+				<div class="latest_news_header icos">
+					<h2>List of ICO Programs</h2>
+				</div>
+			</div>
+			<div class="container_icos_page">
+				<div class="container_icos_page_filters">
+					<ul>
+						<li class="active" data-attr-filter="live">
+							<p>Live</p>
+						</li>
+						<li data-attr-filter="preicos">
+							<p>Pre ICOs</p>
+						</li>
+						<li data-attr-filter="upcoming">
+							<p>Upcoming</p>
+						</li>
+						<li data-attr-filter="finished">
+							<p>Finished</p>
+						</li>
+					</ul>
+				</div>
+				<div class="container_icos_page_table">
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<th>
+								<div>
+								<button>Project</button> 
+								<div class="sort_button">
+								<div class="sort_order top minor"></div>
+								<div class="sort_order bottom major"></div>
+								</div>
+								</div>
+								</th>
+								<th>
+								<div>		
+								<button>Category</button> 
+								<div class="sort_button">
+								<div class="sort_order top minor"></div>
+								<div class="sort_order bottom major"></div>
+								</div>
+								</div>
+								</th>
+								<th>
+								<div>	
+								<button>Recieved</button> 
+								<div class="sort_button">
+								<div class="sort_order top minor"></div>
+								<div class="sort_order bottom major"></div>
+								</div>
+								</div>
+								</th>
+								<th>
+								<div>
+								<button>Goal</button> 
+								<div class="sort_button">
+								<div class="sort_order top minor"></div>
+								<div class="sort_order bottom major"></div>
+								</div>
+								</div>
+								</th>
+								<th>
+								<div>	
+								<button>End Date</button> 
+								<div class="sort_button">
+								<div class="sort_order top minor"></div>
+								<div class="sort_order bottom major"></div>
+								</div>
+								</div>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+								<a href="#">
+									<div><img src="img/btc.png" alt="btc"></div>
+									<div>
+										<h3>DataWallet</h3>
+										<div class="table_stars">
+											<ul>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+											</ul>
+										</div>
+										<p>Bitcoin is an innovative peer-to-peer digital currency utilizing…</p>
+									</div>
+								</a>
+								</td>
+								<td>
+									<a href="#">Marketplace</a>
+								</td>
+								<td>
+									<p>$20,850,000</p>
+									<p>59,75%</p>
+								</td>
+								<td>
+									<p>$20,850,000</p>
+								</td>
+								<td>
+									<p>94d left</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<a href="#">
+									<div><img src="img/btc.png" alt="btc"></div>
+									<div>
+										<h3>DataWallet</h3>
+										<div class="table_stars">
+											<ul>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+											</ul>
+										</div>
+										<p>Bitcoin is an innovative peer-to-peer digital currency utilizing…</p>
+									</div>
+								</a>
+								</td>
+								<td>
+									<a href="#">Marketplace</a>
+								</td>
+								<td>
+									<p>$20,850,000</p>
+									<p>59,75%</p>
+								</td>
+								<td>
+									<p>$20,850,000</p>
+								</td>
+								<td>
+									<p>94d left</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<a href="#">
+									<div><img src="img/btc.png" alt="btc"></div>
+									<div>
+										<h3>DataWallet</h3>
+										<div class="table_stars">
+											<ul>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+											</ul>
+										</div>
+										<p>Bitcoin is an innovative peer-to-peer digital currency utilizing…</p>
+									</div>
+								</a>
+								</td>
+								<td>
+									<a href="#">Marketplace</a>
+								</td>
+								<td>
+									<p>$20,850,000</p>
+									<p>59,75%</p>
+								</td>
+								<td>
+									<p>$20,850,000</p>
+								</td>
+								<td>
+									<p>94d left</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<a href="#">
+									<div><img src="img/btc.png" alt="btc"></div>
+									<div>
+										<h3>DataWallet</h3>
+										<div class="table_stars">
+											<ul>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+											</ul>
+										</div>
+										<p>Bitcoin is an innovative peer-to-peer digital currency utilizing…
+										</p>
+									</div>
+								</a>
+								</td>
+								<td>
+									<a href="#">Marketplace</a>
+								</td>
+								<td>
+									<p>$20,850,000</p>
+									<p>59,75%</p>
+								</td>
+								<td>
+									<p>$20,850,000</p>
+								</td>
+								<td>
+									<p>94d left</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+					<div>
+						<table>
+						<thead>
+							<tr>
+								<th>
+								<div>
+								<button>Project</button> 
+								<div class="sort_button">
+								<div class="sort_order top minor"></div>
+								<div class="sort_order bottom major"></div>
+								</div>
+								</div>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+								<a href="#">
+									<div><img src="img/btc.png" alt="btc"></div>
+									<div>
+										<h3>DataWallet</h3>
+										<div class="table_stars">
+											<ul>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+											</ul>
+										</div>
+										<p>Bitcoin is an innovative peer-to-peer digital currency utilizing…</p>
+									</div>
+								</a>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>
+								<a href="#">
+									<div><img src="img/btc.png" alt="btc"></div>
+									<div>
+										<h3>DataWallet</h3>
+										<div class="table_stars">
+											<ul>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+											</ul>
+										</div>
+										<p>Bitcoin is an innovative peer-to-peer digital currency utilizing…</p>
+									</div>
+								</a>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>
+								<a href="#">
+									<div><img src="img/btc.png" alt="btc"></div>
+									<div>
+										<h3>DataWallet</h3>
+										<div class="table_stars">
+											<ul>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+											</ul>
+										</div>
+										<p>Bitcoin is an innovative peer-to-peer digital currency utilizing…</p>
+									</div>
+								</a>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>
+								<a href="#">
+									<div><img src="img/btc.png" alt="btc"></div>
+									<div>
+										<h3>DataWallet</h3>
+										<div class="table_stars">
+											<ul>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+												<li><img src="img/shape@2x.png" alt=""></li>
+											</ul>
+										</div>
+										<p>Bitcoin is an innovative peer-to-peer digital currency utilizing…
+										</p>
+									</div>
+								</a>
+								</td>
+								
+							</tr>
+						</tbody>
+					</table>
+					</div>
+				</div>
+				<div class="button_load_more">
+	        		<button class="ripple btn absolute-center button_load">Load More</button>
+	    		</div>
+			</div>
+		</div>
+		<div class="container_news_right"><div class="second_crypto_val_block crypto_values">	
+					<div class="value_block collapse">
+						<div class="text_coin">
+							<h4>BitCoin</h4><span class="hours">(24h)</span>
+							<p class="cpi">$8,485.39</p>
+							<p class="cost">EUR: €6,512.65</p>
+							<p class="cost">GBP: €6,023.23</p>
+							<p class="module pos">0.03%</p>
+						</div>
+						<div class="graphic">
+							<div class="graph__wrapper">
+							  <div class="coordinates">
+							  	<span></span>
+							  	<span></span>
+							  	<span></span>
+							  	<span></span>
+							  	<span></span> 
+							  </div>
+							    <svg width="220px" height="107px" viewBox="0 0 280 107" version="1.1">
+							      <defs>
+							          <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="linearGradient-1">
+							              <stop stop-color="#ffec43" offset="0%"></stop>
+							              <stop stop-color="#ffdc00" offset="41.7610013%"></stop>
+							              <stop stop-color="#ffb400" offset="78.6870217%"></stop>
+							              <stop stop-color="#ffc800" offset="100%"></stop>
+							          </linearGradient>
+							      </defs>
+							      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							          <path d="M2.10546875,95.75 L40.5546875,68.3476562 L55.2109375,81.1796875 L65.2148437,76.3945312 L96.1835937,86.8320312 L131.023438,19.9414062 L142.15625,23.7226562 L183.605469,2.1953125 L211.007812,22.3320312 L234.320312,71.5664062 L234.667969,83.0039062 L244.019531,83.0039062 L247.105469,88.8320312 L312.695312,104.839844" id="Path-1" stroke="url(#linearGradient-1)" stroke-width="4" class="path"></path>
+							      </g>
+							  </svg>
+							</div>  
+						</div>
+					</div>
+					<div class="value_block">
+						<div class="text_coin">
+						<h4>ETH</h4><span class="hours">(24h)</span>
+						<p class="cpi">$8,485.39</p>
+						<p class="cost">EUR: €6,512.65</p>
+						<p class="cost">GBP: €6,023.23</p>
+						<p class="module neg">0.03%</p>
+						</div>
+						<div class="graphic">
+							<div class="graph__wrapper">
+							  <div class="coordinates">
+							  	<span></span>
+							  	<span></span>
+							  	<span></span>
+							  	<span></span>
+							  	<span></span> 
+							  </div>
+							    <svg width="220px" height="107px" viewBox="0 0 280 107" version="1.1">
+							      <defs>
+							          <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="linearGradient-2">
+							              <stop stop-color="#ffec43" offset="0%"></stop>
+							              <stop stop-color="#ffdc00" offset="41.7610013%"></stop>
+							              <stop stop-color="#ffb400" offset="78.6870217%"></stop>
+							              <stop stop-color="#ffc800" offset="100%"></stop>
+							          </linearGradient>
+							      </defs>
+							      <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							          <path d="M2.10546875,95.75 L40.5546875,68.3476562 L55.2109375,81.1796875 L65.2148437,76.3945312 L96.1835937,86.8320312 L131.023438,19.9414062 L142.15625,23.7226562 L183.605469,2.1953125 L211.007812,22.3320312 L234.320312,71.5664062 L234.667969,83.0039062 L244.019531,83.0039062 L247.105469,88.8320312 L312.695312,104.839844" id="Path-2" stroke="url(#linearGradient-2)" stroke-width="4" class="path"></path>
+							      </g>
+							  </svg>
+							</div>  
+						</div>
+					</div>
+					<div class="value_block">
+						<div class="text_coin">
+						<h4>DASH</h4><span class="hours">(24h)</span>
+						<p class="cpi">$8,485.39</p>
+						<p class="cost">EUR: €6,512.65</p>
+						<p class="cost">GBP: €6,023.23</p>
+						<p class="module pos">0.03%</p>
+						</div>
+						<div class="graphic">
+							<div class="graph__wrapper">
+							  <div class="coordinates">
+							  	<span></span>
+							  	<span></span>
+							  	<span></span>
+							  	<span></span>
+							  	<span></span> 
+							  </div>
+							    <svg width="220px" height="107px" viewBox="0 0 280 107" version="1.1">
+							     <defs>
+							          <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="linearGradient-3">
+							              <stop stop-color="#ffec43" offset="0%"></stop>
+							              <stop stop-color="#ffdc00" offset="41.7610013%"></stop>
+							              <stop stop-color="#ffb400" offset="78.6870217%"></stop>
+							              <stop stop-color="#ffc800" offset="100%"></stop>
+							          </linearGradient>
+							      </defs>
+							      <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							          <path d="M2.10546875,95.75 L40.5546875,68.3476562 L55.2109375,81.1796875 L65.2148437,76.3945312 L96.1835937,86.8320312 L131.023438,19.9414062 L142.15625,23.7226562 L183.605469,2.1953125 L211.007812,22.3320312 L234.320312,71.5664062 L234.667969,83.0039062 L244.019531,83.0039062 L247.105469,88.8320312 L312.695312,104.839844" id="Path-3" stroke="url(#linearGradient-3)" stroke-width="4" class="path"></path>
+							      </g>
+							  </svg>
+							</div>  
+						</div>
+					</div>
+					<div class="value_block">
+						<div class="text_coin">
+						<h4>XPR</h4><span class="hours">(24h)</span>
+						<p class="cpi">$8,485.39</p>
+						<p class="cost">EUR: €6,512.65</p>
+						<p class="cost">GBP: €6,023.23</p>
+						<p class="module neg">0.03%</p>
+						</div>
+						<div class="graphic">
+							<div class="graph__wrapper">
+							  <div class="coordinates">
+							  	<span></span>
+							  	<span></span>
+							  	<span></span>
+							  	<span></span>
+							  	<span></span> 
+							  </div>
+							    <svg width="220px" height="107px" viewBox="0 0 280 107" version="1.1">
+							     <defs>
+							          <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="linearGradient-4">
+							              <stop stop-color="#ffec43" offset="0%"></stop>
+							              <stop stop-color="#ffdc00" offset="41.7610013%"></stop>
+							              <stop stop-color="#ffb400" offset="78.6870217%"></stop>
+							              <stop stop-color="#ffc800" offset="100%"></stop>
+							          </linearGradient>
+							      </defs>
+							      <g id="Page-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							          <path d="M2.10546875,95.75 L40.5546875,68.3476562 L55.2109375,81.1796875 L65.2148437,76.3945312 L96.1835937,86.8320312 L131.023438,19.9414062 L142.15625,23.7226562 L183.605469,2.1953125 L211.007812,22.3320312 L234.320312,71.5664062 L234.667969,83.0039062 L244.019531,83.0039062 L247.105469,88.8320312 L312.695312,104.839844" id="Path-4" stroke="url(#linearGradient-4)" stroke-width="4" class="path"></path>
+							      </g>
+							  </svg>
+							</div>  
+						</div>
+					</div>
+					<div class="value_block">
+						<div class="text_coin">
+						<h4>LiteCoin</h4><span class="hours">(24h)</span>
+						<p class="cpi">$8,485.39</p>
+						<p class="cost">EUR: €6,512.65</p>
+						<p class="cost">GBP: €6,023.23</p>
+						<p class="module pos">0.03%</p>
+						</div>
+						<div class="graphic">
+							<div class="graph__wrapper">
+							  <div class="coordinates">
+							  	<span></span>
+							  	<span></span>
+							  	<span></span>
+							  	<span></span>
+							  	<span></span> 
+							  </div>
+							    <svg width="220px" height="107px" viewBox="0 0 280 107" version="1.1">
+							      <defs>
+							          <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="linearGradient-5">
+							              <stop stop-color="#ffec43" offset="0%"></stop>
+							              <stop stop-color="#ffdc00" offset="41.7610013%"></stop>
+							              <stop stop-color="#ffb400" offset="78.6870217%"></stop>
+							              <stop stop-color="#ffc800" offset="100%"></stop>
+							          </linearGradient>
+							      </defs>
+							      <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							          <path d="M2.10546875,95.75 L40.5546875,68.3476562 L55.2109375,81.1796875 L65.2148437,76.3945312 L96.1835937,86.8320312 L131.023438,19.9414062 L142.15625,23.7226562 L183.605469,2.1953125 L211.007812,22.3320312 L234.320312,71.5664062 L234.667969,83.0039062 L244.019531,83.0039062 L247.105469,88.8320312 L312.695312,104.839844" id="Path-5" stroke="url(#linearGradient-5)" stroke-width="4" class="path"></path>
+							      </g>
+							  </svg>
+							</div>  
+						</div>
+					</div>
+					<div id="button" class="ripple btn">View All</div>
+				</div>
+				
+
+				
+					<div class="questions topguides">
+					<div class="question_header">
+						<h2>Top Guides</h2>
+					</div>
+					<div class="question_blocks top_guides">
+						<a class="question_block" href="#">
+							<div class="number">
+								<span>1</span>
+							</div>
+							<div>
+								<h4>How to mine Crypto?</h4>
+								<p>
+									<data>22 hours, 20 minutes ago</data>
+									<span><span class="ion-eye ionicons"></span> 1,352</span>
+								</p>
+							</div>
+							<div class="viewers">
+							<span>835</span></div>
+						</a>
+						<a class="question_block" href="#">
+							<div class="number">
+								<span>2</span>
+							</div>
+							<div>
+								<h4>Why Use a Blockchain?</h4>
+								<p>
+									<data>22 hours, 20 minutes ago</data>
+									<span><span class="ion-eye ionicons"></span> 1,352</span>
+								</p>
+							</div>
+							<div class="viewers">
+							<span>835</span></div>
+						</a>
+						<a class="question_block" href="#">
+							<div class="number">
+								<span>3</span>
+							</div>
+							<div>
+								<h4>How to Mine Ethereum</h4>
+								<p>
+									<data>22 hours, 20 minutes ago</data>
+									<span><span class="ion-eye ionicons"></span> 1,352</span>
+								</p>
+							</div>
+							<div class="viewers">
+							<span>835</span></div>
+						</a>
+						<a class="question_block" href="#">
+							<div class="number">
+								<span>4</span>
+							</div>
+							<div>
+								<h4>What is a Application?</h4>
+								<p>
+									<data>22 hours, 20 minutes ago</data>
+									<span><span class="ion-eye ionicons"></span> 1,352</span>
+								</p>
+							</div>
+							<div class="viewers">
+							<span>835</span></div>
+						</a>
+						<a class="question_block" href="#">
+							<div class="number">
+								<span>5</span>
+							</div>
+							<div>
+								<h4>How Do Ethereum Smart Contracts Work?</h4>
+								<p>
+									<data>22 hours, 20 minutes ago</data>
+									<span><span class="ion-eye ionicons"></span> 1,352</span>
+								</p>
+							</div>
+							<div class="viewers">
+							<span>835</span></div>
+						</a>
+					</div> <!-- question blocks -->
+					<div class="questions latestQA">
+					<div class="question_header">
+						<h2>Q&amp;A: <span>Latest</span></h2>
+						<button class="ask ripple btn" id="button3"><span>+</span>Ask</button>
+					</div>
+					<div class="question_blocks QandA">
+						<a class="question_block" href="#">
+							<div>
+								<h4>Bitcoin, Ethereum, Bitcoin Cash, Ripple, Stellar, Litecoin, Cardano…</h4>
+								<p><data>22 hours, 20 minutes ago</data></p>
+							</div>
+							<div class="reply_val"><span>13</span></div>
+						</a>
+						<a class="question_block" href="#">
+							<div>
+								<h4>Bitcoin, Ethereum, Bitcoin Cash, Ripple, Stellar, Litecoin, Cardano…</h4>
+								<p>22 hours, 20 minutes ago</p>
+							</div>
+							<div class="add_new_post reply_val"><span>+</span></div>
+						</a>
+						<a class="question_block" href="#">
+							<div>
+								<h4>Bitcoin, Ethereum, Bitcoin Cash, Ripple, Stellar, Litecoin, Cardano…</h4>
+								<p>22 hours, 20 minutes ago</p>
+							</div>
+							<div class="reply_val"><span>31</span></div>
+						</a>
+						<a class="question_block" href="#">
+							<div>
+								<h4>Bitcoin, Ethereum, Bitcoin Cash, Ripple, Stellar, Litecoin, Cardano…</h4>
+								<p>22 hours, 20 minutes ago</p>
+							</div>
+						<div class="reply_val"><span>1</span></div>
+						</a>
+						<a class="question_block" href="#">
+							<div>
+								<h4>Bitcoin, Ethereum, Bitcoin Cash, Ripple, Stellar, Litecoin, Cardano…</h4>
+								<p>22 hours, 20 minutes ago</p>
+							</div>
+							<div class="reply_val"><span>4</span></div>
+						</a>
+					</div> <!-- question blocks -->
+
+					<div class="banners">
+						<div class="banner firstbanner">
+							<img src="img/ad@2x.jpg" alt="banner">
+						</div>
+						
+					<div class="banner secondbanner">
+							<img src="img/ad1@2x.jpg" alt="banner">
+						</div></div> <!-- banners -->
+				</div>
+
+
+		</div> 
+	</div>
+	</div>
+</div>
+
+
+<footer>
+		<div class="social_icon_block">
+			<div class="social_icon">
+				<h4>Connect with us on Social</h4>
+				<ul class="footer_social">
+					<li><a href="#"><img src="img/facebook@2x.png" alt="facebook"></a></li>
+					<li><a href="#"><img src="img/linkedin@2x.png" alt="linkedin"></a></li>
+					<li><a href="#"><img src="img/twitter@2x.png" alt="twitter"></a></li>
+					<li><a href="#"><img src="img/instagram@2x.png" alt="instagram"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="join_news">
+			<h4>Join the Newsletter</h4>
+			<div class="form">
+				<input type="text" placeholder="Your email address">
+				<button type="submit">GO</button>
+			</div>
+		</div>
+		<div class="contact">
+			<div class="wrapper">
+				<div class="cont">
+					<span>Email:<a href="#">4crypto@.bigscale.pro</a></span>
+					<span>Contact Us:<a href="#">+61 (0) 2 9119 6422</a></span>
+				</div>
+				<div class="footer_nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Faq</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Call Us</a></li>
+					</ul>
+				</div>				
+			</div>
+		</div>
+		<div class="footer_end">
+			<div class="wrapper">
+				<div class="logo">
+					<a href="index.html"><img src="img/logo-white@2x.png" alt="logo"></a>
+				</div>
+				<div class="rules">
+					<ul>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Disclaimer</a></li>
+						<li><a href="#">Copyright 2017</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+</footer>
+		
+
+
+</body>
+</html>
